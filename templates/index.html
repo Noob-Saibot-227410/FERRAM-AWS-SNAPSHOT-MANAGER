@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Snapshots AWS</title>
+    <link rel="icon" type="image/ico" href="https://a0.awsstatic.com/libra-css/images/site/fav/favicon.ico"> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h3>Bitz / Tools</h3>
+        </div>
+    </header>
+    <h1>Snapshots AWS</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID da Instância</th>
+                <th>Descrição</th>
+                <th>Tamanho (GB)</th>
+                <th>Criada em:</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for snapshot in snapshots %}
+            <tr>
+                <td>{{ snapshot.id }}</td>
+                <td>{{ snapshot.description }}</td>
+                <td>{{ snapshot.volume_size }}</td>
+                <td>{{ snapshot.start_time }}</td>
+                <td>
+                    <a href="/copy_snapshot/{{ snapshot.id }}">Copiar</a>
+                    <a href="/rename_snapshot/{{ snapshot.id }}">Renomear</a>
+                    <a href="/delete_snapshot/{{ snapshot.id }}">Excluir</a>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

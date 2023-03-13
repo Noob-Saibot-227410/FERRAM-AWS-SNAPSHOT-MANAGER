@@ -1,0 +1,10 @@
+meu-projeto/
+    .aws/
+        credentials
+    app.py
+    templates/
+        index.html
+        datarain-logo.png
+    static/
+        css/
+            style.css
