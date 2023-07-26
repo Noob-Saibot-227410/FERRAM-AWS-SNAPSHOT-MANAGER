@@ -1,5 +1,7 @@
-## **FERRAMENTA GRATUITA SNAPSHOT MANAGER ferramenta gratuita para ler da sua conta aws snapshots ec2**
-
+## **FERRAMENTA GRATUITA SNAPSHOT MANAGER**
+### **ferramenta gratuita para ler da sua conta aws snapshots ec2**
+<img src="https://techstack-generator.vercel.app/aws-icon.svg" width="65" height="65" alt="GitHub" />
+<img src="https://techstack-generator.vercel.app/python-icon.svg" width="65" height="65" alt="GitHub" />
 ![maxresdefault](https://github.com/Noob-Saibot-227410/ferramenta-gratuita-aws-leitura-de-snapshots-ec2/assets/115899706/7b01e03e-1e84-4e32-9a8a-7a378272954c)
 
 <hr>
